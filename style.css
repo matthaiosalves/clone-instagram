@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafb;
+}
+.section--content {
+  max-width: 825px;
+  margin: 0 auto;
+
+  padding-top: 150px;
+}
+.section--form {
+  min-height: 396px;
+  width: 100%;
+  max-width: 350px;
+  background-color: #fff;
+  margin-left: auto;
+  display:flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #000;
+
+  position: relative;
+
+}
+.section--form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.section--form .input input {
+  height:36px;
+  width: 258px;
+  max-width: 100%;
+  border:1px solid #000;
+}
+.section--form .button {
+  width: 258px;
+  height: 30px;
+  max-width: 100%;
+  background-color: #2298f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.section--form .button a {
+  color: #fff;
+  text-decoration: none;
+}
+.section--form .button a:hover,
+.section--form .button:hover {
+  text-decoration: none;
+  filter: brightness(.85);
+}
+.section--form .division {
+  width: 100%;
+  max-width: 258px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section--form .division .line-one,
+.section--form .division .line-three {
+  background-color: #dbdbdb;
+  height:1px;
+  max-width: 100%;
+  width: 100px;
+}
+.section--form .login {
+  display: flex;
+  flex-direction: column;
+  gap:18px;
+  justify-content: center;
+  align-items: center;
+}
+.section--form .login a {
+  text-decoration: none;
+  color: #385185;
+}
+.section--form .login small {
+  cursor: pointer;
+}
+.section--not_have {
+  max-width: 350px;
+  width: 100%;
+  min-height: 63px;
+
+  background-color: #fff;
+  border: 1px solid #000;
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.section--not_have a {
+  text-decoration: none;
+}
+.section--images {
+  position: absolute;
+}
+.section--images:after {
+  content: url('image-1.png');
+  position: absolute;
+  left: 155px;
+  top: 25px;
+}
+.section--app {
+  margin-left: auto;
+  max-width: 350px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.section--app > .images {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+.section--app > .images a {
+  width: 136px;
+  height: 40px;
+}
+.section--app > .images img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 890px) {
+.content-one {
+  display: none;
+}
+.section--form,
+.section--not_have,
+.section--app {
+  margin-right: auto;
+}
+}
